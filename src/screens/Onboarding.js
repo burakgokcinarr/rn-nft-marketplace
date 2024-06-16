@@ -43,8 +43,8 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
   },
   title: {
-    fontSize: 36,
-    fontFamily: Font.bold,
+    fontSize: 40,
+    fontFamily: Font.extraBold,
     color: Theme.WHITE_COLOR,
   }
 });
