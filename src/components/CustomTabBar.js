@@ -40,6 +40,7 @@ export default function CustomTabBar({ state, descriptors, navigation }) {
           // Center Button (Add)
           return (
             <TouchableOpacity
+                key={route.key}
                 accessibilityRole="button"
                 accessibilityState={isFocused ? { selected: true } : {}}
                 accessibilityLabel={options.tabBarAccessibilityLabel}
@@ -95,7 +96,7 @@ const styles = StyleSheet.create({
   tabBarContainer: {
     flexDirection: 'row',
     height: 85,
-    backgroundColor: Theme.DARK_COLOR,
+    backgroundColor: Theme.WHITE_COLOR,
     justifyContent: 'space-between',
     alignItems: 'center',
     padding: 10,
