@@ -6,6 +6,7 @@ const RED_COLOR      = "#E74C3C";
 const GREEN_COLOR    = "#2ECC71";
 const BLUE_COLOR     = "#6BC5E8";
 const GRAY_COLOR     = "#999999";
+const CARD_BG_COLOR  = "#211134";
 
 export default {
     BG_COLOR,
@@ -15,5 +16,6 @@ export default {
     RED_COLOR,
     GREEN_COLOR,
     BLUE_COLOR,
-    GRAY_COLOR
+    GRAY_COLOR,
+    CARD_BG_COLOR
 }
