@@ -3,14 +3,13 @@ import React from 'react'
 import { FlashList } from "@shopify/flash-list";
 import { DATA_1, DATA_2 } from '../../dummy/Data';
 import { Theme, Font } from '../../constants'
-import { NFTCard } from '../../components';
+import { NFTCard, TrendCard } from '../../components';
 
 export default function Home() {
 
   return (
     <View style={styles.container}>
-      <View style={{ flex:1 }}>
-        <FlashList
+       <FlashList
           data={DATA_1}
           renderItem={({ item }) => <NFTCard item={item}/>}
           estimatedItemSize={200}
@@ -18,14 +17,16 @@ export default function Home() {
           //pagingEnabled
           showsHorizontalScrollIndicator={false}
         />
-      </View>
-      <View style={{ flex:1 }}>
         <Text style={styles.title}>Trending Collections</Text>
-        
-      </View>
-      <View style={{flex:1, backgroundColor: 'blue'}}>
-
-      </View>
+        <FlashList
+          data={DATA_2}
+          renderItem={({ item }) => <TrendCard item={item}/>}
+          estimatedItemSize={200}
+          //horizontal
+          //pagingEnabled
+          showsHorizontalScrollIndicator={false}
+        />
+      
     </View>
   )
 }
@@ -33,7 +34,8 @@ export default function Home() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 6,
+    padding: 5,
+    gap: 5,
     backgroundColor: Theme.CARD_BG_COLOR
   },
   title: {

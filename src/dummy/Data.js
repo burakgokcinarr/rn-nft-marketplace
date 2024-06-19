@@ -53,42 +53,42 @@ export const DATA_2 = [
         like: 200
     },
     {
-        uri: 'https://picsum.photos/200/300?random=1',
+        uri: 'https://picsum.photos/200/300?random=2',
         title: 'Abstract Art',
         like: 170
     },
     {
-        uri: 'https://picsum.photos/200/300?random=1',
+        uri: 'https://picsum.photos/200/300?random=3',
         title: 'Port Art',
         like: 100
     },
     {
-        uri: 'https://picsum.photos/200/300?random=1',
+        uri: 'https://picsum.photos/200/300?random=4',
         title: 'Art Test',
         like: 543
     },
     {
-        uri: 'https://picsum.photos/200/300?random=1',
+        uri: 'https://picsum.photos/200/300?random=5',
         title: 'Art Collection',
         like: 1009
     },
     {
-        uri: 'https://picsum.photos/200/300?random=1',
+        uri: 'https://picsum.photos/200/300?random=6',
         title: '3D Art',
         like: 200
     },
     {
-        uri: 'https://picsum.photos/200/300?random=1',
+        uri: 'https://picsum.photos/200/300?random=7',
         title: 'Abstract Art',
         like: 170
     },
     {
-        uri: 'https://picsum.photos/200/300?random=1',
+        uri: 'https://picsum.photos/200/300?random=8',
         title: 'Port Art',
         like: 100
     },
     {
-        uri: 'https://picsum.photos/200/300?random=1',
+        uri: 'https://picsum.photos/200/300?random=9',
         title: 'Art Test',
         like: 543
     }
