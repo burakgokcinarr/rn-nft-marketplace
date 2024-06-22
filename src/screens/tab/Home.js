@@ -9,24 +9,43 @@ export default function Home() {
 
   return (
     <View style={styles.container}>
-       <FlashList
-          data={DATA_1}
-          renderItem={({ item }) => <NFTCard item={item}/>}
-          estimatedItemSize={200}
-          horizontal
-          //pagingEnabled
-          showsHorizontalScrollIndicator={false}
-        />
+      <ScrollView nestedScrollEnabled={true}>
+        <FlashList
+            data={DATA_1}
+            renderItem={({ item }) => <NFTCard item={item}/>}
+            estimatedItemSize={200}
+            horizontal
+            //pagingEnabled
+            showsHorizontalScrollIndicator={false}
+          />
         <Text style={styles.title}>Trending Collections</Text>
         <FlashList
           data={DATA_2}
           renderItem={({ item }) => <TrendCard item={item}/>}
           estimatedItemSize={200}
-          //horizontal
+          horizontal
           //pagingEnabled
           showsHorizontalScrollIndicator={false}
         />
-      
+        <Text style={styles.title}>Top Seller</Text>
+        <FlashList
+          data={DATA_2}
+          renderItem={({ item }) => <TrendCard item={item}/>}
+          estimatedItemSize={200}
+          horizontal
+          //pagingEnabled
+          showsHorizontalScrollIndicator={false}
+        />
+        <Text style={styles.title}>The Best</Text>
+        <FlashList
+          data={DATA_2}
+          renderItem={({ item }) => <TrendCard item={item}/>}
+          estimatedItemSize={200}
+          horizontal
+          //pagingEnabled
+          showsHorizontalScrollIndicator={false}
+        />
+      </ScrollView>
     </View>
   )
 }
@@ -41,6 +60,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 25,
     fontFamily: Font.extraBold,
-    color: Theme.WHITE_COLOR
+    color: Theme.WHITE_COLOR,
+    marginVertical: 5
 }
 })

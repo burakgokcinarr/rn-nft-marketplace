@@ -49,7 +49,7 @@ export default function CustomTabBar({ state, descriptors, navigation }) {
                 onLongPress={onLongPress}
                 style={styles.middleButton}
               >
-                <Ionicons name={"add"} size={24} color={isFocused ? Theme.WHITE_COLOR : Theme.DARK_COLOR} />
+                <Ionicons name={"add"} size={24} color={isFocused ? Theme.WHITE_COLOR : Theme.CARD_BG_COLOR} />
             </TouchableOpacity>
           );
         }
@@ -113,25 +113,12 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     padding: 5
   },
-  middleTabItem: {
-    position: 'absolute',
-    left: 0,
-    right: 0,
-    bottom: 10,
-    width: 70,
-    height: 70,
-    borderRadius: 35,
-    backgroundColor: Theme.GREEN_COLOR,
-    justifyContent: 'center',
-    alignItems: 'center',
-    zIndex: 1,
-  },
   middleButton: {
     width: 60,
     height: 60,
     bottom: 40,
     borderRadius: 10,
-    backgroundColor: Theme.GREEN_COLOR,
+    backgroundColor: Theme.RED_COLOR,
     justifyContent: 'center',
     alignItems: 'center',
   },
